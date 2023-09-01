@@ -1,13 +1,14 @@
+import React from 'react'
 import './App.scss'
-import Coin from './components/FlipIcon/Coin.component'
-import ReactImg from './assets/react.svg'
-import { CoinSize } from './components/FlipIcon/Coin.definitions'
+import Navbar from './components/Navbar/Navbar.component'
 
 function App() {
 
   return (
     <>
-      <Coin frontImg={ReactImg} imgAlt='react' label='React' size={CoinSize.SMALL}/>
+      <React.Fragment>
+        <Navbar />
+      </React.Fragment>
     </>
   )
 }
