@@ -1,9 +1,11 @@
 import { useRef, useState } from "react";
 import { FaBars, FaTimes, FaRebel } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import './Navbar.scss';
 
 function Navbar() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
-  const navRef = useRef<HTMLDivElement>(null);
+    const navRef = useRef<HTMLDivElement>(null);
 
     const toggleNavBar = () => {
         setIsNavOpen(!isNavOpen);
@@ -11,12 +13,12 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3><FaRebel /></h3>
-			<nav className={isNavOpen ? 'responsive_nav' : ''} ref={navRef}>
-				<a href="/#">About</a>
-				<a href="/#">Experience</a>
-				<a href="/#">Projects</a>
-				<a href="/#">Contact</a>
+			<h3><FaRebel/></h3>
+			<nav className={`nav ${isNavOpen ? 'responsive_nav' : ''}`} ref={navRef}>
+				<Link to="/react-portfolio">About</Link>
+				<Link to="/experience">Experience</Link>
+				<Link to="/projects">Projects</Link>
+				<Link to="/contact">Contact</Link>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={toggleNavBar}>
