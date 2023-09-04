@@ -15,7 +15,7 @@ function Navbar() {
 		<header>
 			<h3><FaRebel/></h3>
 			<nav className={`nav ${isNavOpen ? 'responsive_nav' : ''}`} ref={navRef}>
-				<Link to="/">About</Link>
+				<Link to="/react-portfolio">About</Link>
 				<Link to="/experience">Experience</Link>
 				<Link to="/projects">Projects</Link>
 				<Link to="/contact">Contact</Link>
