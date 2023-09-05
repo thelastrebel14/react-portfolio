@@ -1,4 +1,5 @@
 import { ISocialLink } from "./SocialLink.definitions";
+import './SocialLink.scss'
 
 const SocialLink = (props: ISocialLink) => {
     const {
@@ -7,7 +8,7 @@ const SocialLink = (props: ISocialLink) => {
     } = props;
 
     return (
-        <a href={href} target="_blank">
+        <a href={href} target="_blank" className="social-media-icon">
             {socialMediaIcon}
         </a>
     )

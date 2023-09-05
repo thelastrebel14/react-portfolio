@@ -7,11 +7,7 @@
     background-color: var(--secondaryColor);
     padding: 16px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    p {
-        color: var(--secondaryTextColor);
-        background-color: transparent;
-    }
 }
