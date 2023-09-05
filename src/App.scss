@@ -5,8 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  background-color: var(--mainColor);
-	color: var(--mainTextColor);
 }
 
 :root {
@@ -24,6 +22,13 @@ header {
 	justify-content: space-between;
 	height: 80px;
 	padding: 0 2rem;
-	background-color: transparent;
+  background-color: var(--mainColor);
 	color: var(--mainTextColor);
+}
+
+.body-container {
+  background-color: var(--mainColor);
+	color: var(--mainTextColor);
+  height: 90vh;
+  width: 100%;
 }
