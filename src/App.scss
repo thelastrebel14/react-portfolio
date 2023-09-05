@@ -5,13 +5,17 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  background-color: var(--mainColor);
+	color: var(--mainTextColor);
 }
 
 :root {
   --mainColor: #002333;
   --mainColor-light: #004D70;
-  --secondaryColor: #00BBC9;
+  --secondaryColor: #CACACA;
   --mainTextColor: #FFFFFF;
+  --secondaryTextColor: #393939;
+  --focusMainTextColor: #00BBC9;
 }
 
 header {
@@ -20,6 +24,6 @@ header {
 	justify-content: space-between;
 	height: 80px;
 	padding: 0 2rem;
-	background-color: var(--mainColor);
+	background-color: transparent;
 	color: var(--mainTextColor);
 }
