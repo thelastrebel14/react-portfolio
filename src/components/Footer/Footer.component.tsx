@@ -1,9 +1,33 @@
+import { FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa';
+import SocialLink from '../SocialLink/SocialLink.component';
 import './Footer.scss';
+import { ISocialLink } from '../SocialLink/SocialLink.definitions';
+
+const SocialLinksData: Array<ISocialLink> = [
+    {
+        socialMediaIcon: <FaLinkedin />,
+        href: 'https://www.linkedin.com/in/andrea-garibaldi/'
+    },
+    {
+        socialMediaIcon: <FaGithub />,
+        href: 'https://github.com/thelastrebel14?tab=repositories'
+    },
+    {
+        socialMediaIcon: <FaTelegram />,
+        href:'https://tgram.link/andy_garibaldi'
+    }
+];
 
 const Footer = () => {
+    const getSocialLinks = (): Array<JSX.Element> => {
+        return SocialLinksData.map((socialElement: ISocialLink) => {
+            return <SocialLink socialMediaIcon={socialElement.socialMediaIcon} href={socialElement.href} />
+        });
+    }
+
     return (
-        <footer className="footer">
-            <p>Derechos de autor © 2023 Mi Sitio Web</p>
+        <footer className="footer-container">
+            {getSocialLinks()}
         </footer>
     )
 }

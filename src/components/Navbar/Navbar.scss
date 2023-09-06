@@ -2,9 +2,9 @@ nav a {
     margin: 0 1rem;
     color: var(--mainTextColor);
     text-decoration: none;
-  
-    &:hover {
-      color: var(--secondaryColor);
+    
+    &.active, &:hover {
+      border-bottom: 3px solid var(--focusMainTextColor);
     }
   }
   

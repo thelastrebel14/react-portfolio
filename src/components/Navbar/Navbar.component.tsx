@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
-import { FaBars, FaTimes, FaRebel } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 import './Navbar.scss';
 
 function Navbar() {
@@ -13,12 +13,11 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3><FaRebel/></h3>
 			<nav className={`nav ${isNavOpen ? 'responsive_nav' : ''}`} ref={navRef}>
-				<Link to="/react-portfolio">About</Link>
-				<Link to="/experience">Experience</Link>
-				<Link to="/projects">Projects</Link>
-				<Link to="/contact">Contact</Link>
+				<NavLink to="/react-portfolio">About</NavLink>
+				<NavLink to="/experience">Experience</NavLink>
+				<NavLink to="/projects">Projects</NavLink>
+				<NavLink to="/contact">Contact</NavLink>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={toggleNavBar}>

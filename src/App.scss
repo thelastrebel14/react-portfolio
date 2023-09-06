@@ -8,18 +8,27 @@
 }
 
 :root {
-  --mainColor: #002333;
+  --mainBackgroundColor: #001C30;
   --mainColor-light: #004D70;
-  --secondaryColor: #00BBC9;
+  --secondaryBackgroundColor: #CACACA;
   --mainTextColor: #FFFFFF;
+  --secondaryTextColor: #DAFFFB;
+  --focusMainTextColor: #00BBC9;
 }
 
 header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	height: 80px;
+	justify-content: right;
+	height: 8vh;
 	padding: 0 2rem;
-	background-color: var(--mainColor);
+  background-color: var(--mainBackgroundColor);
 	color: var(--mainTextColor);
+}
+
+.body-container {
+  background-color: var(--mainBackgroundColor);
+	color: var(--mainTextColor);
+  height: 92vh;
+  width: 100%;
 }
