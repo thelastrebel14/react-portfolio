@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { FaBars, FaTimes, FaRebel } from "react-icons/fa";
+import { FaBars, FaTimes, FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import './Navbar.scss';
 
@@ -13,7 +13,7 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3><FaRebel/></h3>
+			<h3><FaCode/></h3>
 			<nav className={`nav ${isNavOpen ? 'responsive_nav' : ''}`} ref={navRef}>
 				<Link to="/react-portfolio">About</Link>
 				<Link to="/experience">Experience</Link>
