@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa';
 import SocialLink from '../SocialLink/SocialLink.component';
 import './Footer.scss';
 import { ISocialLink } from '../SocialLink/SocialLink.definitions';
@@ -11,6 +11,10 @@ const SocialLinksData: Array<ISocialLink> = [
     {
         socialMediaIcon: <FaGithub />,
         href: 'https://github.com/thelastrebel14?tab=repositories'
+    },
+    {
+        socialMediaIcon: <FaTelegram />,
+        href:'https://tgram.link/andy_garibaldi'
     }
 ];
 
