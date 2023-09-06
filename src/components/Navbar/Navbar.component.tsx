@@ -13,7 +13,6 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3><FaCode/></h3>
 			<nav className={`nav ${isNavOpen ? 'responsive_nav' : ''}`} ref={navRef}>
 				<NavLink to="/react-portfolio">About</NavLink>
 				<NavLink to="/experience">Experience</NavLink>
