@@ -21,7 +21,7 @@ const ExperienceCard = (props: IExperience) => {
             <h3>{period}</h3>
         </div>
         <div className='experience-synopsis'>
-            <h3>{`${title} @${company}`}</h3>
+            <h3>{`${title} @ ${company}`}</h3>
             <p>{jobDescription}</p>
             <div className='skill-tags'>
               {getSkillTags}
