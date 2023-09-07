@@ -30,12 +30,27 @@ header {
 
 body {
   background-color: var(--mainBackgroundColor);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-.body-container {
-  // background-color: var(--mainBackgroundColor);
-	color: var(--mainTextColor);
-  height: 84vh;
-  width: 100%;
-  padding: 0 16px;
+.app {
+  min-height: 100vh; /* Al menos el alto de la ventana gráfica */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .body-container {
+    // background-color: var(--mainBackgroundColor);
+    color: var(--mainTextColor);
+    // height: 84vh;
+    width: 100%;
+    padding: 0 16px;
+    padding-bottom: 9vh;
+    flex: 1;
+    overflow-y: auto;
+  }
 }
+
+
