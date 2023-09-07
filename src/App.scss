@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  background-color: var(--mainBackgroundColor);
 }
 
 :root {
@@ -31,6 +32,7 @@ header {
 .body-container {
   background-color: var(--mainBackgroundColor);
 	color: var(--mainTextColor);
-  height: 92vh;
+  height: 84vh;
   width: 100%;
+  padding: 0 16px;
 }
