@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <div className='body-container'>
         <Routes>
-          <Route path='/react-portfolio' element={<Home />}/>
-          <Route path='/experience' element={<Experience />}/>
+          <Route path='/react-portfolio/about' element={<Home />}/>
+          <Route path='/react-portfolio/experience' element={<Experience />}/>
           {/* <Route path='/projects' element={<Projects />}/>
           <Route path='/contact' element={<Contact />}/> */}
         </Routes>

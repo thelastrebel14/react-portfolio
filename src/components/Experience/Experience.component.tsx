@@ -1,6 +1,7 @@
 import ExperienceCard from '../ExperienceCard/ExperienceCard.component';
 import { WorkExperience } from '../../data/JobExperience.data';
 import { IExperience } from '../ExperienceCard/ExperienceCard.definitions';
+import './Experience.scss';
 
 const Experience = () => {
 
@@ -14,7 +15,7 @@ const Experience = () => {
         />
     );
     return (
-        <div>
+        <div className='experience-container'>
             {getExperienceCards}
         </div>
     )

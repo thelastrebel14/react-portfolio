@@ -25,5 +25,57 @@ export const WorkExperience: Array<IExperience> = [
                 name: 'Storybook'
             },
         ]
+    },
+    {
+        period: 'December 2020 - July 2021', 
+        title: 'Web Developer',
+        company: 'Grupo Pueblo Bonito',
+        jobDescription: `Optimized SQL stored procedures to enhance data management, expanded system functionalities through the creation of PHP screens and modules to improve user interfaces and usability.
+                Employed PDO for secure and efficient database access from PHP, and designed interactive, functional user interfaces using Figma, ensuring accurate implementation during development.`,
+        skills: [
+            {
+                name: 'JavaScript'
+            },
+            {
+                name: 'SQL'
+            },
+            {
+                name: 'PHP'
+            },
+            {
+                name: 'PDO'
+            },
+            {
+                name: 'Figma'
+            },
+        ]
+    },
+    {
+        period: 'January 2020 - May 2020', 
+        title: 'Software Developer',
+        company: 'Universidad Politécnica De Sinaloa',
+        jobDescription: `Product creation by collaborating closely with clients, addressing user challenges through visual and functional solutions.
+            Used Figma to design interactive mockups and user flow prototypes for interface delivery.
+            Additionally, initiated a PHP and CodeIgniter-based administrative system, including database design and front-end design.`,
+        skills: [
+            {
+                name: 'JavaScript'
+            },
+            {
+                name: 'HTML'
+            },
+            {
+                name: 'SCSS'
+            },
+            {
+                name: 'PHP'
+            },
+            {
+                name: 'Figma'
+            },
+            {
+                name: 'SQL'
+            }
+        ]
     }
 ]

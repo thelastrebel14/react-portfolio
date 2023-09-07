@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  background-color: var(--mainBackgroundColor);
 }
 
 :root {
@@ -13,7 +14,7 @@
   --secondaryBackgroundColor: #CACACA;
   --mainTextColor: #FFFFFF;
   --secondaryTextColor: #DAFFFB;
-  --titleTextColor: #005b84;
+  --titleTextColor: #00AEFD;
   --focusMainTextColor: #00BBC9;
   --chipBackgroundColor: #176B87;
 }
@@ -31,6 +32,7 @@ header {
 .body-container {
   background-color: var(--mainBackgroundColor);
 	color: var(--mainTextColor);
-  height: 92vh;
+  height: 84vh;
   width: 100%;
+  padding: 0 16px;
 }
