@@ -14,8 +14,8 @@ function Navbar() {
 	return (
 		<header>
 			<nav className={`nav ${isNavOpen ? 'responsive_nav' : ''}`} ref={navRef}>
-				<NavLink to="/react-portfolio">About</NavLink>
-				<NavLink to="/experience">Experience</NavLink>
+				<NavLink to="/react-portfolio/about">About</NavLink>
+				<NavLink to="/react-portfolio/experience">Experience</NavLink>
 				<NavLink to="/projects">Projects</NavLink>
 				<NavLink to="/contact">Contact</NavLink>
 				<button
