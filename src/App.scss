@@ -35,6 +35,10 @@ body {
   padding: 0;
 }
 
+h2 {
+  color: var(--titleTextColor);
+}
+
 .app {
   min-height: 100vh; /* Al menos el alto de la ventana gráfica */
   display: flex;
@@ -42,14 +46,15 @@ body {
   position: relative;
 
   .body-container {
-    // background-color: var(--mainBackgroundColor);
     color: var(--mainTextColor);
-    // height: 84vh;
     width: 100%;
     padding: 0 16px;
     padding-bottom: 9vh;
     flex: 1;
     overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 
