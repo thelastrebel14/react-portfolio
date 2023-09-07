@@ -3,7 +3,7 @@
     flex-direction: row;
     padding: 8px;
     gap: 16px;
-    max-width: 530px;
+    max-width: 600px;
     transition: background-color 0.3s;
     border-radius: 8px;
     
@@ -34,6 +34,12 @@
             font-size: 14px;
             font-weight: normal;
             
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
         }
     }
 }

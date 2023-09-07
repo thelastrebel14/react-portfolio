@@ -1,15 +1,31 @@
+import Chip from '../Chip/Chip.component';
+import { IExperience } from './ExperienceCard.definitions';
 import './ExperienceCard.scss';
 
-const ExperienceCard = () => {
+const ExperienceCard = (props: IExperience) => {
+  const {
+    period,
+    title,
+    company,
+    jobDescription,
+    skills
+  } = props;
+
+
+  const getSkillTags = skills.map((skill) => <Chip label={skill.name}/>);
+
+
   return (
     <section className='experience-card-container'>
         <div className='start-and-date'>
-            <h3>August 2021 - July 2023</h3>
+            <h3>{period}</h3>
         </div>
         <div className='experience-synopsis'>
-            <h3>Experience Title </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum, minima suscipit nesciunt totam at cupiditate consectetur, eaque, sit est sint perferendis iusto in quisquam culpa repellendus eos aspernatur quod.</p>
-            <div className='skill-tags'></div>
+            <h3>{`${title} @${company}`}</h3>
+            <p>{jobDescription}</p>
+            <div className='skill-tags'>
+              {getSkillTags}
+            </div>
         </div>
     </section>
   )
