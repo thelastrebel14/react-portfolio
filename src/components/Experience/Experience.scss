@@ -1,7 +1,38 @@
 .experience-container {
     display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     height: 100%;
+    width: 100%;
+
+    .skills-and-technologies-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+            grid-gap: 10px;
+            font-size: 55px;
+            margin-top: 16px;
+
+            .skill-element {
+                text-align: center;
+                transition: color 0.3s;
+                &:hover {
+                    color: var(--focusMainTextColor);
+                }
+            }
+        }
+    }
+
+    .work-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
