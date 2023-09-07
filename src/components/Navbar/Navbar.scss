@@ -42,11 +42,15 @@ nav a {
       align-items: center;
       justify-content: center;
       gap: 1.5rem;
-      background-color: var(--mainColor);
+      background-color: var(--mainBackgroundColor);
       transition: 1s;
   
       &.responsive_nav {
         transform: translateY(100vh);
+
+        .body-container {
+          visibility: hidden;
+        }
       }
     }
   
