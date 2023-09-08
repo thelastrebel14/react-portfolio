@@ -6,6 +6,10 @@
     height: 100%;
     width: 100%;
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
     .skills-and-technologies-container {
         display: flex;
         flex-direction: column;
