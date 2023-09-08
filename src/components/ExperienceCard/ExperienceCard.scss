@@ -12,9 +12,7 @@
     }
 
     .start-and-date {
-        background-color: transparent;
         h3 {
-            background-color: transparent;
             white-space: nowrap;
             font-size: .75rem;
             line-height: 1.5rem;
@@ -27,23 +25,19 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-        background-color: transparent;
         h3 {
             color: var(--secondaryTextColor);
-            background-color: transparent;
         }
 
         p {
             font-size: 14px;
             font-weight: normal;
-            background-color: transparent;
         }
 
         .skill-tags {
             display: flex;
             flex-direction: row;
             gap: 4px;
-            background-color: transparent;
         }
     }
 }
